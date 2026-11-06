@@ -75,13 +75,19 @@ payment details.
 
 `order_items` exists as a separate table because one order can contain many
 products. If we stored products inside `orders`, we wouldn't know how many
-columns we'd need, and most of them would be NULL.
+columns we'did
+
 
 ## Learning Notes
-1.I learned that NULL means the value is missing or unknown
+
+1.I learned that NULL means the value is missing or unknown.
+for example:
+   payment_date is NULL when a COD customer hasn't paid yet.
+
 2.I learned that a primary key is important because it uniquely
    identifies each row, unlike customer_name, which can be the same
    for two different customers.
+   
 3.A mistake I made was writing column names with spaces (order id) instead
    of underscores (order_id), and now I know SQL reads a space as two separate
    words, so it causes an error. I must use the exact column name.
