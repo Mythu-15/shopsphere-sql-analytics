@@ -75,7 +75,7 @@ payment details.
 
 `order_items` exists as a separate table because one order can contain many
 products. If we stored products inside `orders`, we wouldn't know how many
-columns we’d need, and most of them would be NULL.”
+columns we’d need, and most of them would be NULL.
 
 
 ## Learning Notes
